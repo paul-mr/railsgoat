@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
       end
       redirect_to path
     else
-      flash[:error] = e.message
+      flash[:error] = "Your username and password don't match"
       render "new"
     end
   end
